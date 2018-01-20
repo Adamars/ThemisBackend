@@ -42,6 +42,16 @@ public class User {
     this.name = usr.getName();
   }
 
+  @Override
+  public String toString() {
+    return "User{" +
+        "id=" + id +
+        ", name='" + name + '\'' +
+        ", email='" + email + '\'' +
+        ", role=" + role +
+        '}';
+  }
+
   public Integer getId() {
     return id;
   }
